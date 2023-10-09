@@ -1,9 +1,9 @@
 pipeline {
-agent { node { label 'AGENT' } }
-//   options {
-//        timeout(time: 1, unit: 'HOURS')
+agent { node { label 'AGENT-1' } }
+  options {
+       timeout(time: 1, unit: 'HOURS')
 
-//     } 
+    } 
 
     
     stages {
@@ -22,7 +22,7 @@ agent { node { label 'AGENT' } }
               sh '''
                  ls -ltr
                 pwd
-                terrform init 
+                terrform plan 
                 '''
             }
         }

@@ -12,7 +12,7 @@ terraform {
     bucket = "aslamroboshop-remote-state"
     region = "us-east-1"
     dynamodb_table = "roboshop-state-lock"  
-    key = "vpc"   #what is use this key 
+    key = "vpc-roboshop"   #what is use this key 
     
      #here we are locking s3 bucket to avid the duplication and some error while exicuting 
    

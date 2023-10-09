@@ -20,7 +20,7 @@ agent { node { label 'AGENT-1' } }
         stage('Plan') {
             steps {
               sh '''
-                 ls -ltr
+                ls -ltr
                 pwd
                 terraform plan 
                 '''
@@ -35,7 +35,6 @@ agent { node { label 'AGENT-1' } }
         stage('Apply') {
             steps {
                  sh '''
-                 ls -ltr
                 pwd
                 terraform apply auto-approve 
                 '''

@@ -1,5 +1,5 @@
 pipeline {
- agent any
+ agent agent { node { label 'AGENT' } }
   options {
         ansiColor('xterm')
         timeout(time: 1, unit: 'HOURS')

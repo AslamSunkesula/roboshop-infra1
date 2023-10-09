@@ -33,6 +33,17 @@ pipeline {
               //  error 'this is failed '
             }
         }
+        stage('Apply') {
+            steps {
+                 sh '''
+                 ls -ltr
+                pwd
+                terrform apply auto-approve 
+                '''
+               
+            }
+        }
+        
     }     
     post { 
         always { 

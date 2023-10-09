@@ -13,7 +13,7 @@ agent { node { label 'AGENT-1' } }
                 sh '''
                 ls -ltr
                 pwd
-                terrform init 
+                terraform init 
                 '''
             }
         }
@@ -22,7 +22,7 @@ agent { node { label 'AGENT-1' } }
               sh '''
                  ls -ltr
                 pwd
-                terrform plan 
+                terraform plan 
                 '''
             }
         }
@@ -37,7 +37,7 @@ agent { node { label 'AGENT-1' } }
                  sh '''
                  ls -ltr
                 pwd
-                terrform apply auto-approve 
+                terraform apply auto-approve 
                 '''
                
             }
